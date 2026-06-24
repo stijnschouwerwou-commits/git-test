@@ -53,18 +53,23 @@ body {
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 2rem;
+    gap: 3rem;
 }
 
-.nav-links a {
+.nav-link {
     color: var(--accent-color);
     text-decoration: none;
     font-weight: 500;
-    transition: color 0.3s;
+    position: relative;
+    display: inline-block;
+    transition: all 0.3s ease;
+    text-shadow: 0 0 0 rgba(82, 183, 136, 0);
 }
 
-.nav-links a:hover {
-    color: var(--lighter-green);
+.nav-link:hover {
+    transform: translateY(-3px);
+    text-shadow: 0 0 12px rgba(82, 183, 136, 0.6);
+    color: #d8f3dc;
 }
 
 /* Hero Section */
