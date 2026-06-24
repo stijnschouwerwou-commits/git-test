@@ -1,11 +1,152 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Git test</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Thumb Gardening - Professional Garden Services</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Mijn Git website werkt via Plesk</h1>
-  <p>Deze pagina is gedeployed vanuit GitHub.</p>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">🌿 Green Thumb Gardening</div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Green Thumb Gardening</h1>
+            <p>Transform Your Outdoor Space Into a Beautiful Paradise</p>
+            <button class="cta-button" onclick="scrollToSection('services')">Get Started</button>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🌱</div>
+                    <h3>Garden Design</h3>
+                    <p>Custom garden designs tailored to your space and preferences.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">✂️</div>
+                    <h3>Landscaping</h3>
+                    <p>Professional landscaping services to enhance your property.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🌳</div>
+                    <h3>Tree Care</h3>
+                    <p>Expert tree trimming, pruning, and maintenance services.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💧</div>
+                    <h3>Irrigation</h3>
+                    <p>Efficient irrigation system installation and maintenance.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🌸</div>
+                    <h3>Plant Care</h3>
+                    <p>Regular plant maintenance and seasonal care services.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🏡</div>
+                    <h3>Outdoor Spaces</h3>
+                    <p>Create patios, decks, and outdoor living areas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Us</h2>
+                    <p>With over 15 years of experience in the gardening industry, Green Thumb Gardening is committed to creating beautiful, sustainable outdoor spaces.</p>
+                    <p>Our team of certified horticulturists and landscape designers brings expertise and passion to every project.</p>
+                    <ul class="about-list">
+                        <li>✓ Licensed & Insured</li>
+                        <li>✓ 15+ Years Experience</li>
+                        <li>✓ Eco-Friendly Practices</li>
+                        <li>✓ Customer Satisfaction Guaranteed</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <div class="placeholder-image">📸 Garden Image</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>Recent Projects</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image">🌺</div>
+                    <h3>Residential Garden Makeover</h3>
+                    <p>Complete garden transformation</p>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">🌻</div>
+                    <h3>Commercial Landscape</h3>
+                    <p>Office building landscaping</p>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">🍃</div>
+                    <h3>Vertical Garden Design</h3>
+                    <p>Modern urban gardening solution</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p><strong>Phone:</strong> (555) 123-4567</p>
+                    <p><strong>Email:</strong> info@greenthumbgardening.com</p>
+                    <p><strong>Address:</strong> 123 Garden Street, Green Valley, GV 12345</p>
+                    <p><strong>Hours:</strong> Mon-Fri 8AM-6PM, Sat 9AM-4PM</p>
+                </div>
+                <form class="contact-form" onsubmit="handleFormSubmit(event)">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Green Thumb Gardening. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
