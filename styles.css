@@ -40,20 +40,24 @@ body {
 
 .navbar .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .logo {
     font-size: 1.8rem;
     font-weight: bold;
     color: var(--accent-color);
+    text-align: center;
 }
 
 .nav-links {
     display: flex;
     list-style: none;
     gap: 3rem;
+    justify-content: center;
 }
 
 .nav-link {
@@ -367,9 +371,15 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .navbar .container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
     .nav-links {
         gap: 1rem;
         font-size: 0.9rem;
+        flex-wrap: wrap;
     }
 
     .hero-content h1 {
