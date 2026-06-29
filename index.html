@@ -121,17 +121,49 @@
             <div class="contact-content">
                 <div class="contact-info">
                     <h3>Contact Information</h3>
-                    <p><strong>Phone:</strong> (555) 123-4567</p>
-                    <p><strong>Email:</strong> info@timtuinen.com</p>
-                    <p><strong>Address:</strong> 123 Garden Street, Green Valley, GV 12345</p>
-                    <p><strong>Hours:</strong> Mon-Fri 8AM-6PM, Sat 9AM-4PM</p>
+                    
+                    <div class="contact-item">
+                        <h4>📞 Telefoonnummer</h4>
+                        <p><a href="tel:+31652093844" class="contact-link">06 52 09 38 44</a></p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h4>💬 WhatsApp</h4>
+                        <p><a href="https://wa.me/31652093844" target="_blank" class="contact-link">Stuur een WhatsApp</a></p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h4>📧 E-mail</h4>
+                        <p><a href="javascript:void(0);" class="email-link" onclick="revealEmail()">Klik hier voor e-mailadres</a></p>
+                        <p id="email-reveal" style="display: none; color: var(--primary-green); font-weight: 500;"><a href="mailto:tim@timtuinen.nl">tim@timtuinen.nl</a></p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h4>📍 Adres</h4>
+                        <p>Schildmos 29<br>2914 XD Nieuwerkerk aan den IJssel<br>Nederland</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h4>🕐 Openingstijden</h4>
+                        <p>Maandag - Vrijdag: 08:00 - 18:00<br>
+                        Zaterdag: 09:00 - 16:00<br>
+                        Zondag: Gesloten</p>
+                    </div>
                 </div>
-                <form class="contact-form" onsubmit="handleFormSubmit(event)">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <textarea placeholder="Your Message" rows="5" required></textarea>
-                    <button type="submit" class="submit-button">Send Message</button>
-                </form>
+
+                <div class="contact-map">
+                    <h3>Locatie</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2454.0234566802373!2d4.8345!3d51.8795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5d8e7e5e5e5e5%3A0x0!2sTimTuinen!5e0!3m2!1snl!2snl!4v1234567890" width="100%" height="400" style="border:none; border-radius: 15px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <div class="social-section">
+                <h3>Volg ons</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">📱 Facebook</a>
+                    <a href="#" class="social-icon">📷 Instagram</a>
+                    <a href="#" class="social-icon">🐦 Twitter</a>
+                </div>
             </div>
         </div>
     </section>
@@ -149,5 +181,11 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        function revealEmail() {
+            const emailReveal = document.getElementById('email-reveal');
+            emailReveal.style.display = emailReveal.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
 </body>
 </html>
