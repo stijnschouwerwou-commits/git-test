@@ -157,6 +157,14 @@ p, a, li {
     width: 100%;
 }
 
+.nav-link.active {
+    color: var(--accent-gold);
+}
+
+.nav-link.active::after {
+    width: 100%;
+}
+
 /* ===== HERO SECTION ===== */
 .hero {
     background: linear-gradient(135deg, rgba(15, 20, 25, 0.4) 0%, rgba(26, 31, 46, 0.4) 100%), url('timtuinen-van.jpg') center/cover no-repeat;
@@ -170,6 +178,7 @@ p, a, li {
     justify-content: center;
     position: relative;
     overflow: hidden;
+    will-change: background-position, transform;
 }
 
 .hero::before {
@@ -270,6 +279,7 @@ p, a, li {
     background: linear-gradient(180deg, var(--primary-dark) 0%, var(--secondary-dark) 100%);
     position: relative;
     overflow: hidden;
+    will-change: transform;
 }
 
 .services::before {
@@ -301,6 +311,9 @@ p, a, li {
     border: 1px solid var(--border-subtle);
     position: relative;
     backdrop-filter: blur(10px);
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
+    will-change: transform, opacity;
 }
 
 .service-card::before {
@@ -315,8 +328,13 @@ p, a, li {
     transition: opacity 0.3s ease;
 }
 
+.service-card.visible {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
 .service-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-10px) scale(1);
     box-shadow: 0 15px 50px rgba(212, 175, 55, 0.2);
     border-color: var(--accent-gold);
     background: linear-gradient(135deg, rgba(26, 31, 46, 0.95) 0%, rgba(42, 36, 32, 0.8) 100%);
@@ -375,6 +393,14 @@ p, a, li {
     align-items: center;
     position: relative;
     z-index: 2;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.about-content.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .about h2 {
@@ -451,6 +477,7 @@ p, a, li {
     padding: 6rem 2rem;
     background: linear-gradient(180deg, var(--secondary-dark) 0%, var(--primary-dark) 100%);
     position: relative;
+    will-change: transform;
 }
 
 .portfolio::before {
@@ -480,6 +507,14 @@ p, a, li {
     transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
     border: 1px solid var(--border-subtle);
     backdrop-filter: blur(10px);
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
+    will-change: transform, opacity;
+}
+
+.portfolio-item.visible {
+    opacity: 1;
+    transform: translateY(0) scale(1);
 }
 
 .portfolio-item:hover {
@@ -715,7 +750,6 @@ p, a, li {
 .scroll-fade {
     opacity: 0;
     transform: translateY(30px);
-    transition: all 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .scroll-fade.visible {
