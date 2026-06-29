@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TimTuinen - Professional Garden Services</title>
+    <title>TimTuinen - Professionele Tuinontwerp & Realisatie</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,7 +13,7 @@
             <div class="logo">🌿 TimTuinen</div>
             <ul class="nav-links">
                 <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#services" class="nav-link">Diensten</a></li>
                 <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
@@ -22,47 +22,51 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+        <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1>Welcome to TimTuinen</h1>
-            <p>Transform Your Outdoor Space Into a Beautiful Paradise</p>
-            <button class="cta-button" onclick="scrollToSection('services')">Get Started</button>
+            <h1 class="hero-title">Jouw Tuin Verdient het Beste</h1>
+            <p class="hero-subtitle">Professionele tuinontwerp en realisatie met oog voor detail</p>
+            <button class="cta-button" onclick="smoothScroll('services')">Ontdek Onze Diensten</button>
         </div>
     </section>
 
     <!-- Services Section -->
     <section id="services" class="services">
         <div class="container">
-            <h2>Our Services</h2>
+            <div class="section-header">
+                <h2>Onze Diensten</h2>
+                <p class="section-subtitle">Vakwerk van hoog niveau</p>
+            </div>
             <div class="services-grid">
                 <div class="service-card">
-                    <div class="service-icon">🌱</div>
-                    <h3>Garden Design</h3>
-                    <p>Custom garden designs tailored to your space and preferences.</p>
+                    <div class="service-icon">🎨</div>
+                    <h3>Tuinontwerp</h3>
+                    <p>Op maat gemaakte tuinconcepten afgestemd op uw wensen en ruimte.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🌿</div>
+                    <h3>Landscaping</h3>
+                    <p>Professionele aanleg en aanpassing van tuinen en groene ruimten.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">✂️</div>
-                    <h3>Landscaping</h3>
-                    <p>Professional landscaping services to enhance your property.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🌳</div>
-                    <h3>Tree Care</h3>
-                    <p>Expert tree trimming, pruning, and maintenance services.</p>
+                    <h3>Boomverzorging</h3>
+                    <p>Deskundige snoei, onderhoud en verzorging van bomen en struiken.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">💧</div>
-                    <h3>Irrigation</h3>
-                    <p>Efficient irrigation system installation and maintenance.</p>
+                    <h3>Irrigatiesystemen</h3>
+                    <p>Efficiënte bevloeiingsystemen voor optimale groeicondities.</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">🌸</div>
-                    <h3>Plant Care</h3>
-                    <p>Regular plant maintenance and seasonal care services.</p>
+                    <div class="service-icon">🌳</div>
+                    <h3>Plantenverzorging</h3>
+                    <p>Regelmatig onderhoud en seizoensgebonden zorg voor uw planten.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">🏡</div>
-                    <h3>Outdoor Spaces</h3>
-                    <p>Create patios, decks, and outdoor living areas.</p>
+                    <h3>Buitenruimten</h3>
+                    <p>Creatie van terrassen, zitplekken en complete buitenleven.</p>
                 </div>
             </div>
         </div>
@@ -73,18 +77,18 @@
         <div class="container">
             <div class="about-content">
                 <div class="about-text">
-                    <h2>About Us</h2>
-                    <p>With over 15 years of experience in the gardening industry, TimTuinen is committed to creating beautiful, sustainable outdoor spaces.</p>
-                    <p>Our team of certified horticulturists and landscape designers brings expertise and passion to every project.</p>
+                    <h2>Over TimTuinen</h2>
+                    <p>Met meer dan 15 jaar ervaring in de tuinbranche, staat TimTuinen bekend om professioneel vakwerk en aandacht voor detail. Wij realiseren niet zomaar tuinen – wij creëren buiten levensruimten.</p>
+                    <p>Ons team van ervaren horticulturist en tuinontwerpers brengt passie en expertise naar elk project.</p>
                     <ul class="about-list">
-                        <li>✓ Licensed & Insured</li>
-                        <li>✓ 15+ Years Experience</li>
-                        <li>✓ Eco-Friendly Practices</li>
-                        <li>✓ Customer Satisfaction Guaranteed</li>
+                        <li>✓ Gecertificeerd en verzekerd</li>
+                        <li>✓ 15+ jaar ervaring</li>
+                        <li>✓ Duurzame werkwijze</li>
+                        <li>✓ Klantensatisfactie gegarandeerd</li>
                     </ul>
                 </div>
                 <div class="about-image">
-                    <div class="placeholder-image">📸 Garden Image</div>
+                    <div class="placeholder-image">📸 Tuinafbeelding</div>
                 </div>
             </div>
         </div>
@@ -93,22 +97,25 @@
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio">
         <div class="container">
-            <h2>Recent Projects</h2>
+            <div class="section-header">
+                <h2>Recente Projecten</h2>
+                <p class="section-subtitle">Ons werk spreekt voor zich</p>
+            </div>
             <div class="portfolio-grid">
                 <div class="portfolio-item">
                     <div class="portfolio-image">🌺</div>
-                    <h3>Residential Garden Makeover</h3>
-                    <p>Complete garden transformation</p>
+                    <h3>Residentiële Tuinmakeover</h3>
+                    <p>Volledige tuintransformatie met moderne design</p>
                 </div>
                 <div class="portfolio-item">
                     <div class="portfolio-image">🌻</div>
-                    <h3>Commercial Landscape</h3>
-                    <p>Office building landscaping</p>
+                    <h3>Commercieel Landschap</h3>
+                    <p>Professionele inrichting kantoortuinen</p>
                 </div>
                 <div class="portfolio-item">
                     <div class="portfolio-image">🍃</div>
-                    <h3>Vertical Garden Design</h3>
-                    <p>Modern urban gardening solution</p>
+                    <h3>Verticale Tuinontwerp</h3>
+                    <p>Innovatieve stadsgaardening oplossing</p>
                 </div>
             </div>
         </div>
@@ -117,52 +124,34 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2>Get In Touch</h2>
-            <div class="contact-content">
+            <div class="section-header">
+                <h2>Neem Contact Op</h2>
+                <p class="section-subtitle">We horen graag van u</p>
+            </div>
+            <div class="contact-wrapper">
                 <div class="contact-info">
-                    <h3>Contact Information</h3>
+                    <h3>Contactgegevens</h3>
                     
                     <div class="contact-item">
-                        <h4>📞 Telefoonnummer</h4>
+                        <h4>📞 Telefoon</h4>
                         <p><a href="tel:+31652093844" class="contact-link">06 52 09 38 44</a></p>
                     </div>
 
                     <div class="contact-item">
                         <h4>💬 WhatsApp</h4>
-                        <p><a href="https://wa.me/31652093844" target="_blank" class="contact-link">Stuur een WhatsApp</a></p>
+                        <p><a href="https://wa.me/31652093844" target="_blank" class="contact-link">Stuur een bericht</a></p>
                     </div>
 
                     <div class="contact-item">
                         <h4>📧 E-mail</h4>
-                        <p><a href="javascript:void(0);" class="email-link" onclick="revealEmail()">Klik hier voor e-mailadres</a></p>
-                        <p id="email-reveal" style="display: none; color: var(--primary-green); font-weight: 500;"><a href="mailto:tim@timtuinen.nl">tim@timtuinen.nl</a></p>
+                        <p><a href="javascript:void(0);" class="email-link" onclick="revealEmail()">Klik voor e-mailadres</a></p>
+                        <p id="email-reveal" style="display: none; color: var(--accent-dark); font-weight: 500; margin-top: 0.5rem;"><a href="mailto:tim@timtuinen.nl" style="color: var(--accent-gold);">tim@timtuinen.nl</a></p>
                     </div>
 
                     <div class="contact-item">
-                        <h4>📍 Adres</h4>
+                        <h4>📍 Locatie</h4>
                         <p>Schildmos 29<br>2914 XD Nieuwerkerk aan den IJssel<br>Nederland</p>
                     </div>
-
-                    <div class="contact-item">
-                        <h4>🕐 Openingstijden</h4>
-                        <p>Maandag - Vrijdag: 08:00 - 18:00<br>
-                        Zaterdag: 09:00 - 16:00<br>
-                        Zondag: Gesloten</p>
-                    </div>
-                </div>
-
-                <div class="contact-map">
-                    <h3>Locatie</h3>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2454.0234566802373!2d4.8345!3d51.8795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5d8e7e5e5e5e5%3A0x0!2sTimTuinen!5e0!3m2!1snl!2snl!4v1234567890" width="100%" height="400" style="border:none; border-radius: 15px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>
-
-            <div class="social-section">
-                <h3>Volg ons</h3>
-                <div class="social-icons">
-                    <a href="#" class="social-icon">📱 Facebook</a>
-                    <a href="#" class="social-icon">📷 Instagram</a>
-                    <a href="#" class="social-icon">🐦 Twitter</a>
                 </div>
             </div>
         </div>
@@ -171,21 +160,10 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 TimTuinen. All rights reserved.</p>
-            <div class="social-links">
-                <a href="#">Facebook</a>
-                <a href="#">Instagram</a>
-                <a href="#">Twitter</a>
-            </div>
+            <p>&copy; 2024 TimTuinen. Alle rechten voorbehouden.</p>
         </div>
     </footer>
 
     <script src="script.js"></script>
-    <script>
-        function revealEmail() {
-            const emailReveal = document.getElementById('email-reveal');
-            emailReveal.style.display = emailReveal.style.display === 'none' ? 'block' : 'none';
-        }
-    </script>
 </body>
 </html>
