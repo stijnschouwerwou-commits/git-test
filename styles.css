@@ -1,16 +1,16 @@
-/* ===== PREMIUM COLOR PALETTE ===== */
+/* ===== PREMIUM COLOR PALETTE - GREEN THEME ===== */
 :root {
-    /* Luxury Color Scheme */
-    --primary-dark: #0f1419;
-    --secondary-dark: #1a1f2e;
-    --accent-gold: #d4af37;
-    --accent-gold-light: #e8c547;
-    --text-light: #e8e8e8;
-    --text-muted: #b0b0b0;
-    --accent-cream: #f5f1e8;
-    --accent-warm: #2a2420;
-    --border-subtle: rgba(212, 175, 55, 0.2);
-    --border-light: rgba(232, 197, 71, 0.1);
+    /* Nature-Inspired Green & Cream Color Scheme */
+    --primary-dark: #1A1A1A;
+    --primary-green: #4B5D4D;
+    --secondary-green: #7A9A77;
+    --accent-green: #A8C0A3;
+    --accent-cream: #F3F8F5;
+    --text-light: #F3F8F5;
+    --text-dark: #1A1A1A;
+    --text-muted: #7A9A77;
+    --border-subtle: rgba(122, 154, 119, 0.2);
+    --border-light: rgba(168, 192, 163, 0.15);
 }
 
 /* ===== GENERAL STYLES ===== */
@@ -27,8 +27,8 @@ html {
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
-    color: var(--text-light);
-    background-color: var(--primary-dark);
+    color: var(--text-dark);
+    background-color: var(--accent-cream);
     overflow-x: hidden;
 }
 
@@ -59,10 +59,9 @@ p, a, li {
 .section-header h2 {
     font-size: 3rem;
     margin-bottom: 0.5rem;
-    background: linear-gradient(135deg, var(--accent-gold) 0%, var(--accent-gold-light) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--primary-green);
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
     letter-spacing: 1px;
 }
 
@@ -75,14 +74,14 @@ p, a, li {
 
 /* ===== NAVIGATION BAR ===== */
 .navbar {
-    background: linear-gradient(180deg, var(--primary-dark) 0%, rgba(15, 20, 25, 0.95) 100%);
+    background: linear-gradient(180deg, var(--accent-cream) 0%, rgba(243, 248, 245, 0.95) 100%);
     padding: 1.5rem 0;
     position: sticky;
     top: 0;
     z-index: 100;
     backdrop-filter: blur(10px);
-    border-bottom: 1px solid var(--border-light);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    border-bottom: 2px solid var(--border-subtle);
+    box-shadow: 0 4px 20px rgba(75, 93, 77, 0.1);
 }
 
 .navbar .container {
@@ -96,13 +95,13 @@ p, a, li {
 .logo {
     font-size: 2.2rem;
     font-weight: 700;
-    color: var(--accent-gold);
+    color: var(--primary-green);
     text-align: center;
     font-family: 'Quicksand', sans-serif;
     letter-spacing: 2px;
     position: relative;
     padding-bottom: 12px;
-    text-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+    text-shadow: 0 0 20px rgba(122, 154, 119, 0.2);
 }
 
 .logo::after {
@@ -112,11 +111,11 @@ p, a, li {
     left: 50%;
     width: 60%;
     height: 2px;
-    background: linear-gradient(90deg, transparent 0%, var(--accent-gold) 20%, var(--accent-gold) 80%, transparent 100%);
+    background: linear-gradient(90deg, transparent 0%, var(--secondary-green) 20%, var(--secondary-green) 80%, transparent 100%);
     transform: translateX(-50%);
     opacity: 0.8;
     border-radius: 1px;
-    box-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+    box-shadow: 0 0 10px rgba(122, 154, 119, 0.4);
 }
 
 .nav-links {
@@ -127,7 +126,7 @@ p, a, li {
 }
 
 .nav-link {
-    color: var(--text-light);
+    color: var(--primary-green);
     text-decoration: none;
     font-weight: 500;
     font-family: 'Poppins', sans-serif;
@@ -145,12 +144,12 @@ p, a, li {
     left: 0;
     width: 0;
     height: 2px;
-    background: linear-gradient(90deg, var(--accent-gold), var(--accent-gold-light));
+    background: linear-gradient(90deg, var(--secondary-green), var(--accent-green));
     transition: width 0.3s ease;
 }
 
 .nav-link:hover {
-    color: var(--accent-gold);
+    color: var(--secondary-green);
 }
 
 .nav-link:hover::after {
@@ -158,7 +157,7 @@ p, a, li {
 }
 
 .nav-link.active {
-    color: var(--accent-gold);
+    color: var(--secondary-green);
 }
 
 .nav-link.active::after {
@@ -167,9 +166,9 @@ p, a, li {
 
 /* ===== HERO SECTION ===== */
 .hero {
-    background: linear-gradient(135deg, rgba(15, 20, 25, 0.4) 0%, rgba(26, 31, 46, 0.4) 100%), url('timtuinen-van.jpg') center/cover no-repeat;
+    background: linear-gradient(135deg, rgba(75, 93, 77, 0.4) 0%, rgba(122, 154, 119, 0.3) 100%), url('timtuinen-van.jpg') center/cover no-repeat;
     background-attachment: fixed;
-    color: white;
+    color: var(--text-dark);
     padding: 12rem 2rem;
     text-align: center;
     min-height: 700px;
@@ -188,7 +187,7 @@ p, a, li {
     left: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.6) 100%);
+    background: radial-gradient(ellipse at center, rgba(243, 248, 245, 0.3) 0%, rgba(75, 93, 77, 0.4) 100%);
     z-index: 1;
     pointer-events: none;
 }
@@ -199,7 +198,7 @@ p, a, li {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(180deg, rgba(212, 175, 55, 0.05) 0%, transparent 50%, rgba(15, 20, 25, 0.4) 100%);
+    background: linear-gradient(180deg, rgba(243, 248, 245, 0.1) 0%, transparent 50%, rgba(75, 93, 77, 0.2) 100%);
     z-index: 1;
 }
 
@@ -217,8 +216,9 @@ p, a, li {
     font-family: 'Quicksand', sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
-    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+    text-shadow: 0 2px 10px rgba(75, 93, 77, 0.3);
     line-height: 1.2;
+    color: var(--primary-green);
 }
 
 .hero-subtitle {
@@ -227,15 +227,15 @@ p, a, li {
     opacity: 0.95;
     font-family: 'Merriweather', serif;
     font-weight: 400;
-    color: var(--accent-cream);
-    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    color: var(--primary-green);
+    text-shadow: 0 1px 5px rgba(75, 93, 77, 0.2);
     animation: fadeIn 1.5s ease 0.3s backwards;
 }
 
 .cta-button {
-    background: linear-gradient(135deg, var(--accent-gold) 0%, var(--accent-gold-light) 100%);
-    color: var(--primary-dark);
-    border: 2px solid var(--accent-gold);
+    background: linear-gradient(135deg, var(--secondary-green) 0%, var(--accent-green) 100%);
+    color: var(--accent-cream);
+    border: 2px solid var(--secondary-green);
     padding: 1.3rem 3.5rem;
     font-size: 1.1rem;
     border-radius: 50px;
@@ -243,7 +243,7 @@ p, a, li {
     font-weight: 700;
     font-family: 'Poppins', sans-serif;
     transition: all 0.3s ease;
-    box-shadow: 0 8px 30px rgba(212, 175, 55, 0.3);
+    box-shadow: 0 8px 30px rgba(122, 154, 119, 0.3);
     letter-spacing: 0.5px;
     position: relative;
     overflow: hidden;
@@ -265,7 +265,8 @@ p, a, li {
 
 .cta-button:hover {
     transform: translateY(-3px);
-    box-shadow: 0 12px 40px rgba(212, 175, 55, 0.4);
+    box-shadow: 0 12px 40px rgba(122, 154, 119, 0.4);
+    background: linear-gradient(135deg, var(--primary-green) 0%, var(--secondary-green) 100%);
 }
 
 .cta-button:hover::before {
@@ -276,7 +277,7 @@ p, a, li {
 /* ===== SERVICES SECTION ===== */
 .services {
     padding: 6rem 2rem;
-    background: linear-gradient(180deg, var(--primary-dark) 0%, var(--secondary-dark) 100%);
+    background: linear-gradient(180deg, var(--accent-cream) 0%, #FFFFFF 100%);
     position: relative;
     overflow: hidden;
     will-change: transform;
@@ -289,7 +290,7 @@ p, a, li {
     right: -10%;
     width: 500px;
     height: 500px;
-    background: radial-gradient(circle, rgba(212, 175, 55, 0.05) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(168, 192, 163, 0.08) 0%, transparent 70%);
     pointer-events: none;
 }
 
@@ -302,13 +303,13 @@ p, a, li {
 }
 
 .service-card {
-    background: linear-gradient(135deg, rgba(26, 31, 46, 0.8) 0%, rgba(42, 36, 32, 0.6) 100%);
+    background: linear-gradient(135deg, rgba(243, 248, 245, 0.9) 0%, rgba(255, 255, 255, 0.8) 100%);
     padding: 2.5rem;
     border-radius: 15px;
     text-align: center;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 32px rgba(75, 93, 77, 0.1);
     transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
-    border: 1px solid var(--border-subtle);
+    border: 2px solid var(--border-subtle);
     position: relative;
     backdrop-filter: blur(10px);
     opacity: 0;
@@ -323,7 +324,7 @@ p, a, li {
     left: 0;
     right: 0;
     height: 3px;
-    background: linear-gradient(90deg, transparent, var(--accent-gold), transparent);
+    background: linear-gradient(90deg, transparent, var(--secondary-green), transparent);
     opacity: 0;
     transition: opacity 0.3s ease;
 }
@@ -335,9 +336,9 @@ p, a, li {
 
 .service-card:hover {
     transform: translateY(-10px) scale(1);
-    box-shadow: 0 15px 50px rgba(212, 175, 55, 0.2);
-    border-color: var(--accent-gold);
-    background: linear-gradient(135deg, rgba(26, 31, 46, 0.95) 0%, rgba(42, 36, 32, 0.8) 100%);
+    box-shadow: 0 15px 50px rgba(122, 154, 119, 0.2);
+    border-color: var(--secondary-green);
+    background: linear-gradient(135deg, rgba(243, 248, 245, 1) 0%, rgba(255, 255, 255, 0.95) 100%);
 }
 
 .service-card:hover::before {
@@ -356,7 +357,7 @@ p, a, li {
 }
 
 .service-card h3 {
-    color: var(--accent-gold);
+    color: var(--primary-green);
     margin-bottom: 0.8rem;
     font-family: 'Quicksand', sans-serif;
     font-size: 1.4rem;
@@ -371,7 +372,7 @@ p, a, li {
 /* ===== ABOUT SECTION ===== */
 .about {
     padding: 6rem 2rem;
-    background-color: var(--primary-dark);
+    background-color: var(--accent-cream);
     position: relative;
 }
 
@@ -382,7 +383,7 @@ p, a, li {
     left: -10%;
     width: 500px;
     height: 500px;
-    background: radial-gradient(circle, rgba(212, 175, 55, 0.05) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(168, 192, 163, 0.08) 0%, transparent 70%);
     pointer-events: none;
 }
 
@@ -405,7 +406,7 @@ p, a, li {
 
 .about h2 {
     font-size: 2.8rem;
-    color: var(--accent-gold);
+    color: var(--primary-green);
     margin-bottom: 1.5rem;
     font-family: 'Quicksand', sans-serif;
     font-weight: 700;
@@ -426,7 +427,7 @@ p, a, li {
 
 .about-list li {
     padding: 0.8rem 0;
-    color: var(--accent-gold);
+    color: var(--secondary-green);
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
     font-size: 1.05rem;
@@ -442,23 +443,23 @@ p, a, li {
     transform: translateY(-50%);
     width: 8px;
     height: 8px;
-    background: var(--accent-gold);
+    background: var(--secondary-green);
     border-radius: 50%;
 }
 
 .placeholder-image {
-    background: linear-gradient(135deg, var(--secondary-dark), var(--accent-warm));
+    background: linear-gradient(135deg, var(--accent-green), var(--secondary-green));
     height: 400px;
     border-radius: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 4rem;
-    color: var(--accent-gold);
+    color: var(--accent-cream);
     position: relative;
     overflow: hidden;
     border: 2px solid var(--border-subtle);
-    box-shadow: 0 15px 50px rgba(212, 175, 55, 0.15);
+    box-shadow: 0 15px 50px rgba(122, 154, 119, 0.15);
 }
 
 .placeholder-image::before {
@@ -468,14 +469,14 @@ p, a, li {
     right: -50%;
     width: 400px;
     height: 400px;
-    background: radial-gradient(circle, rgba(212, 175, 55, 0.1) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(243, 248, 245, 0.15) 0%, transparent 70%);
     border-radius: 50%;
 }
 
 /* ===== PORTFOLIO SECTION ===== */
 .portfolio {
     padding: 6rem 2rem;
-    background: linear-gradient(180deg, var(--secondary-dark) 0%, var(--primary-dark) 100%);
+    background: linear-gradient(180deg, #FFFFFF 0%, var(--accent-cream) 100%);
     position: relative;
     will-change: transform;
 }
@@ -487,7 +488,7 @@ p, a, li {
     left: -10%;
     width: 500px;
     height: 500px;
-    background: radial-gradient(circle, rgba(212, 175, 55, 0.05) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(168, 192, 163, 0.08) 0%, transparent 70%);
     pointer-events: none;
 }
 
@@ -500,12 +501,12 @@ p, a, li {
 }
 
 .portfolio-item {
-    background: linear-gradient(135deg, rgba(26, 31, 46, 0.8) 0%, rgba(42, 36, 32, 0.6) 100%);
+    background: linear-gradient(135deg, rgba(243, 248, 245, 0.9) 0%, rgba(255, 255, 255, 0.8) 100%);
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 32px rgba(75, 93, 77, 0.1);
     transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
-    border: 1px solid var(--border-subtle);
+    border: 2px solid var(--border-subtle);
     backdrop-filter: blur(10px);
     opacity: 0;
     transform: translateY(30px) scale(0.95);
@@ -519,12 +520,12 @@ p, a, li {
 
 .portfolio-item:hover {
     transform: translateY(-10px) scale(1.02);
-    box-shadow: 0 15px 50px rgba(212, 175, 55, 0.2);
-    border-color: var(--accent-gold);
+    box-shadow: 0 15px 50px rgba(122, 154, 119, 0.2);
+    border-color: var(--secondary-green);
 }
 
 .portfolio-image {
-    background: linear-gradient(135deg, var(--accent-gold), var(--accent-gold-light));
+    background: linear-gradient(135deg, var(--secondary-green), var(--accent-green));
     height: 250px;
     display: flex;
     align-items: center;
@@ -541,12 +542,12 @@ p, a, li {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, transparent 0%, rgba(0, 0, 0, 0.2) 100%);
+    background: linear-gradient(135deg, transparent 0%, rgba(0, 0, 0, 0.1) 100%);
 }
 
 .portfolio-item h3 {
     padding: 1.5rem 1.5rem 0.5rem;
-    color: var(--accent-gold);
+    color: var(--primary-green);
     font-family: 'Quicksand', sans-serif;
     font-size: 1.3rem;
 }
@@ -560,7 +561,7 @@ p, a, li {
 /* ===== CONTACT SECTION ===== */
 .contact {
     padding: 6rem 2rem;
-    background-color: var(--primary-dark);
+    background-color: var(--accent-cream);
     position: relative;
 }
 
@@ -571,7 +572,7 @@ p, a, li {
     right: -10%;
     width: 500px;
     height: 500px;
-    background: radial-gradient(circle, rgba(212, 175, 55, 0.05) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(168, 192, 163, 0.08) 0%, transparent 70%);
     pointer-events: none;
 }
 
@@ -583,16 +584,16 @@ p, a, li {
 }
 
 .contact-info {
-    background: linear-gradient(135deg, rgba(26, 31, 46, 0.8) 0%, rgba(42, 36, 32, 0.6) 100%);
+    background: linear-gradient(135deg, rgba(243, 248, 245, 0.95) 0%, rgba(255, 255, 255, 0.9) 100%);
     padding: 3rem;
     border-radius: 15px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-    border: 1px solid var(--border-subtle);
+    box-shadow: 0 8px 32px rgba(75, 93, 77, 0.1);
+    border: 2px solid var(--border-subtle);
     backdrop-filter: blur(10px);
 }
 
 .contact-info h3 {
-    color: var(--accent-gold);
+    color: var(--primary-green);
     margin-bottom: 2.5rem;
     font-family: 'Quicksand', sans-serif;
     font-size: 1.8rem;
@@ -612,20 +613,20 @@ p, a, li {
 }
 
 .contact-item h4 {
-    color: var(--accent-gold-light);
+    color: var(--secondary-green);
     margin-bottom: 0.8rem;
     font-family: 'Quicksand', sans-serif;
     font-size: 1.2rem;
 }
 
 .contact-item p {
-    color: var(--text-light);
+    color: var(--text-dark);
     font-family: 'Merriweather', serif;
     line-height: 1.9;
 }
 
 .contact-link {
-    color: var(--accent-gold);
+    color: var(--secondary-green);
     text-decoration: none;
     font-weight: 600;
     transition: all 0.3s ease;
@@ -639,7 +640,7 @@ p, a, li {
     left: 0;
     width: 100%;
     height: 2px;
-    background: var(--accent-gold);
+    background: var(--secondary-green);
     transform: scaleX(0);
     transform-origin: right;
     transition: transform 0.3s ease;
@@ -652,7 +653,7 @@ p, a, li {
 
 .email-link {
     cursor: pointer;
-    color: var(--accent-gold);
+    color: var(--secondary-green);
     font-weight: 600;
     transition: all 0.3s ease;
     position: relative;
@@ -665,7 +666,7 @@ p, a, li {
     left: 0;
     width: 100%;
     height: 2px;
-    background: var(--accent-gold);
+    background: var(--secondary-green);
     transform: scaleX(0);
     transform-origin: right;
     transition: transform 0.3s ease;
@@ -678,12 +679,12 @@ p, a, li {
 
 /* ===== FOOTER ===== */
 .footer {
-    background: linear-gradient(180deg, var(--secondary-dark) 0%, var(--primary-dark) 100%);
-    color: var(--text-muted);
+    background: linear-gradient(180deg, var(--primary-green) 0%, var(--secondary-green) 100%);
+    color: var(--accent-cream);
     padding: 2.5rem;
     text-align: center;
     font-family: 'Poppins', sans-serif;
-    border-top: 1px solid var(--border-subtle);
+    border-top: 2px solid var(--border-subtle);
 }
 
 .footer .container {
